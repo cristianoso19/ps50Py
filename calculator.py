@@ -1,6 +1,6 @@
-x = int(input("What's x? "))
-y = int(input("What's y? "))
+x = float(input("What's x? "))
+y = float(input("What's y? "))
 
-#z = int(x) + int(y)
+z = round(x + y) #Default round to 0 decimals
 
-print(x + y)
+print(z)
