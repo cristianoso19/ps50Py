@@ -3,4 +3,4 @@ y = float(input("What's y? "))
 
 z = round(x + y) #Default round to 0 decimals
 
-print(z)
+print(f"{z:,}")
