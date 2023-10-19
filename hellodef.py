@@ -1,4 +1,4 @@
-def main ():
+def main():
     hello() #Call to function with no arguments
     name = input("What's your name? ")
     hello(name)
