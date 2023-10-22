@@ -7,6 +7,7 @@ def main():
         print("Odd")
 
 def is_even(n):
-    return True if n % 2 == 0 else False
+    #return (n % 2 == 0) # Return what happen in parentesis, just return the question
+    return n % 2 == 0 #  You dont need the parentesis just return the question
     
 main()
