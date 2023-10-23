@@ -1,1 +1,6 @@
-print("meow\n" * 3, end="") #End is the form that print ends
+while True: #Its excuted until break 
+    n = int(input("What's n? "))
+    if n < 0: 
+        continue #Continue the loop
+    else:
+        break #Exit from the loop
