@@ -5,7 +5,5 @@ students = {
     "Draco": "Slytherin"    
 }
 
-print(students["Hermione"])
-print(students["Harry"])
-print(students["Ron"])
-print(students["Draco"])
+for student in students: #By default in foor loop we see the keys
+    print(student)
