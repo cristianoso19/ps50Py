@@ -5,5 +5,5 @@ students = {
     "Draco": "Slytherin"    
 }
 
-for student in students: #By default in foor loop we see the keys
-    print(student)
+for student in students:
+    print(student, students[student])
