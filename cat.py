@@ -1,2 +1,1 @@
-for _ in range(3): # range return a range of values the argument is the number of values and it starts from 1
-    print("meow")
+print("meow\n" * 3, end="") #End is the form that print ends
