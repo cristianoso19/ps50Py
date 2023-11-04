@@ -26,6 +26,19 @@ print("hello, world")
 
 # print (f"x is {x}")
 
+# def main():
+#     x = get_int()
+#     print(f"x is {x}")
+
+# def get_int():
+#     while True:
+#         try:
+#             return int(input("What's x? "))
+#         except ValueError:
+#             print("x is not integer")
+
+# main()
+
 def main():
     x = get_int()
     print(f"x is {x}")
@@ -35,6 +48,5 @@ def get_int():
         try:
             return int(input("What's x? "))
         except ValueError:
-            print("x is not integer")
-
+            pass #Mecanismo para no hacer nada durante el error
 main()
