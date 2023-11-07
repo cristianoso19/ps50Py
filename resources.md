@@ -5,3 +5,5 @@
 [Types Dict](https://docs.python.org/3/library/stdtypes.html#mapping-types-dict)
 
 [Libraries Random](https://docs.python.org/3/library/random.html)
+
+[Libraries Statistics](https://docs.python.org/3/library/statistics.html)
