@@ -9,3 +9,5 @@
 [Libraries Statistics](https://docs.python.org/3/library/statistics.html)
 
 [Libraries Sys](https://docs.python.org/3/library/sys.html)
+
+[Libraries API](https://pypi.org/project/requests)
