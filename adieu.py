@@ -10,9 +10,7 @@ def main():
             names.append(name)
         except EOFError: #Catch Ctrl-D
             break
-        except:
-            print("An error was found")
 
-    print("Adieu, adieu, to ", p.join(names))
+    print("\nAdieu, adieu, to", p.join(names))
 
 main()
