@@ -1,6 +1,5 @@
 from random import randint
 
-
 def main():
     level = get_level("Level: ")
     score = 0
@@ -11,6 +10,7 @@ def main():
         message = f"{num1} + {num2} = " 
         tries = 0
         response = 0
+
         while True:
             if tries == 3:
                 print(message, num1+num2, sep="")
@@ -26,6 +26,7 @@ def main():
                         raise ValueError
                 except ValueError:
                     print("EEE")
+
     print("Score:", score)
 
 def get_level(message):
