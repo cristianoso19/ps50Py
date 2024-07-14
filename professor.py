@@ -5,7 +5,25 @@ def main():
     level = get_level("Level: ")
     num1 = generate_integer(level)
     num2 = generate_integer(level)
-    print(num1, num2)
+    hit = False
+    tries = 0
+    message = f"{num1} + {num2} = " 
+    response = 0
+    while hit == False:
+        if tries == 3:
+            print(message, num1+num2, sep="")
+            break
+        else:
+            tries += 1
+            try:
+                response = int(input(message))
+            except ValueError:
+                print("EEE")
+        
+            if response == num1+num2:
+                hit = True 
+        
+
 def get_level(message):
     while True:
         try:
