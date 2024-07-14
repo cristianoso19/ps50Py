@@ -3,26 +3,30 @@ from random import randint
 
 def main():
     level = get_level("Level: ")
-    num1 = generate_integer(level)
-    num2 = generate_integer(level)
-    hit = False
-    tries = 0
-    message = f"{num1} + {num2} = " 
-    response = 0
-    while hit == False:
-        if tries == 3:
-            print(message, num1+num2, sep="")
-            break
-        else:
-            tries += 1
-            try:
-                response = int(input(message))
-            except ValueError:
-                print("EEE")
-        
-            if response == num1+num2:
-                hit = True 
-        
+    score = 0
+
+    for i in range(9):
+        num1 = generate_integer(level)
+        num2 = generate_integer(level)
+        message = f"{num1} + {num2} = " 
+        tries = 0
+        response = 0
+        while True:
+            if tries == 3:
+                print(message, num1+num2, sep="")
+                break
+            else:
+                tries += 1
+                try:
+                    response = int(input(message))
+                    if response == num1+num2:
+                        score += 1
+                        break
+                    else:
+                        raise ValueError
+                except ValueError:
+                    print("EEE")
+    print("Score:", score)
 
 def get_level(message):
     while True:
