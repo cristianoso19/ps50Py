@@ -1,19 +1,13 @@
-from twttr import shorten
+from bank import value
 
 def test_default():
-    try:
-        assert shorten() == ""
-    except TypeError:
-        print("No argument")
+    assert value("hello") == 0
     
-def test_lowercase():
-    assert shorten("today") == "tdy"
+def test_hello_name():
+    assert value("hello, david") == 0
 
-def test_uppercase():
-    assert shorten("BELIVE") == "BLV"
+def test_how():
+    assert value("How you doing?") == 20
 
-def test_number():
-    assert shorten("23") == "23"
-
-def test_punctuatio():
-    assert shorten(",.") == ",."
+def test_what():
+    assert value("What's happening?") == 100

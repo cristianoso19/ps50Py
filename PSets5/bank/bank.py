@@ -3,7 +3,6 @@ def main():
     amount = value(greeting)
     print(amount)
 
-
 def value(greeting):
     greeting = greeting.strip().lower().capitalize()
 
